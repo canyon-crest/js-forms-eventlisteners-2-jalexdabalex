@@ -120,13 +120,13 @@ myPara.innerHTML = rame + ", your total is $" + total;
 let clere = document.getElementById("clearBtn");
 let rad = document.getElementById("r3");
 clere.addEventListener("click", function() {
-    rame = "";
+    document.getElementById("myInput").value = "";
     rad.checked = true;
     let toppings = document.getElementsByName("cb");
     for (let i=0; i<toppings.length; i++) {
         toppings[i].checked = false;
     }
-    fee = "dinein";
-    myPara.innerHTML = "";
+    document.getElementById("serviceSelect").value = "dinein";
+    document.getElementById("myPara").innerHTML = "";
 }
 )
